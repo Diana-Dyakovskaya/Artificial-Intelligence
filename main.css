@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 12px;
   margin-right: 5px;
-  background: url("../img/footer_email.png") 0 0 no-repeat;
+  background: url("./img/footer_email.png") 0 0 no-repeat;
 }
 
 .footer-contacts__phone::before {
@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background: url("../img/footer_phone.png") 0 0 no-repeat;
+  background: url("./img/footer_phone.png") 0 0 no-repeat;
 }
 
 .footer-contacts__address::before {
@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 17px;
   margin-right: 5px;
-  background: url("../img/footer_address.png") 0 0 no-repeat;
+  background: url("./img/footer_address.png") 0 0 no-repeat;
 }
 
 .site-nav {

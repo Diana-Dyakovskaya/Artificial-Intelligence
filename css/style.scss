@@ -358,7 +358,7 @@ max-width: 605px;
   width: 15px;
   height: 12px;
   margin-right: 5px;
-  background: url("../img/footer_email.png") 0 0 no-repeat;
+  background: url("./img/footer_email.png") 0 0 no-repeat;
 }
 .footer-contacts__phone::before {
   content: '';
@@ -366,7 +366,7 @@ max-width: 605px;
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background: url("../img/footer_phone.png") 0 0 no-repeat;
+  background: url("./img/footer_phone.png") 0 0 no-repeat;
 }
 .footer-contacts__address::before {
   content: '';
@@ -374,7 +374,7 @@ max-width: 605px;
   width: 15px;
   height: 17px;
   margin-right: 5px;
-  background: url("../img/footer_address.png") 0 0 no-repeat;
+  background: url("./img/footer_address.png") 0 0 no-repeat;
 }
 .site-nav {
   display: flex;
