@@ -14,31 +14,33 @@
 <header class="header">
   <div class="container">
     <div class="header__container">
-      <div class="header__logo">
-        <img loading="lazy" src="img/header_logo.png" alt="logo">
-        <a href="#" class="header__logo-text">Artificial Intelligence</a>
+      <div class="header__logo header-brand">
+        <img class="header-brand__logo" loading="lazy" src="img/header_logo.png" alt="logo">
+        <a href="#" class="header-brand__name">Artificial Intelligence</a>
       </div>
-      <nav>
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a class="heared__list-text" href="#">Home</a>
+      <nav class="header__nav header-menu">
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Home</a>
           </li>
-          <li class="header__list-item">
-            <a class="heared__list-text" href="#">About</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">About</a>
           </li>
-          <li class="header__list-item">
-            <a class="heared__list-text" href="#">Services</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Services</a>
           </li>
-          <li class="header__list-item">
-            <a class="heared__list-text" href="#">Blog</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Blog</a>
           </li>
-          <li class="header__list-item">
-            <a class="heared__list-text" href="#">Contact</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
-      <div class="header__button">
-        <button class="button" type="button">Sign In</button>
+      <div class="header__actions">
+        <div class="header__button">
+          <button class="button" type="button">Sign In</button>
+        </div>
       </div>
     </div>
   </div>
@@ -46,13 +48,14 @@
 <main>
   <section class="home-intro">
     <div class="home-intro__container">
+      <h1 class="visually-hidden">Artificial intelligence & Syber security</h1>
       <div class="home-intro__content">
         <p class="home-intro__subtitle">Next genaretion platform</p>
-        <h1 class="home-intro__title">Artificial intelligence & Syber security</h1>
+        <h2 class="home-intro__title">Artificial intelligence & Syber security</h2>
         <p class="home-intro__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
           publishing industries for previewing layouts and visual mockups.</p>
         <div class="home-intro__btns">
-          <button class="button home-intro__button" type="button">Get Started</button>
+          <a class="button home-intro__button" href="#"">Get Started</a>
           <a class="home-intro__video button" href="#"><span class="home-intro__video-button">Watch
             Video</span></a>
         </div>
@@ -61,27 +64,25 @@
         <img loading="lazy" src="./img/home-intro.png" alt="Artificial intelligence">
       </div>
     </div>
-  </section>
-  <section class="home-logo">
     <div class="container">
       <h2 class="visually-hidden">Company logos</h2>
-      <ul class="home-logo__list">
-        <li class="home-logo__item">
+      <ul class="home-intro__logos">
+        <li class="home-intro__logo">
           <a href="#">
             <img src="./img/home-logo_1.png" alt="Logoipsum">
           </a>
         </li>
-        <li class="home-logo__item">
+        <li class="home-intro__logo">
           <a href="#">
             <img src="./img/home-logo_2.png" alt="Logoipsum">
           </a>
         </li>
-        <li class="home-logo__item">
+        <li class="home-intro__logo">
           <a href="#">
             <img src="./img/home-logo_3.png" alt="Logoipsum">
           </a>
         </li>
-        <li class="home-logo__item">
+        <li class="home-intro__logo">
           <a href="#">
             <img src="./img/home-logo_4.png" alt="Logoipsum">
           </a>
@@ -160,22 +161,22 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container footer-container">
-    <div class="column-left">
+  <div class="container footer__container">
+    <div class="footer__left">
       <img loading="lazy" src="./img/footer_logo.png" alt="logo">
       <a class="footer-logo" href="#">Artificial Intelligence</a>
       <p class="footer__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and
         visual mockups.</p>
-      <div class="footer-contacts">
-        <p class="footer-contacts__email">Company@gmail.com.com</p>
-        <p class="footer-contacts__phone">Phone: (064) 332-1233</p>
-        <p class="footer-contacts__address">450 Wall Street, USA, New York</p>
-      </div>
+      <ul class="footer-contacts footer__list">
+        <li class="footer-contacts__email">Company@gmail.com.com</li>
+        <li class="footer-contacts__phone">Phone: (064) 332-1233</li>
+        <li class="footer-contacts__address">450 Wall Street, USA, New York</li>
+      </ul>
     </div>
-    <div class="column-center site-nav">
-      <div class="site-nav__section">
-        <h3 class="site-nav__section-title">INFORMATION</h3>
-        <ul class="site-nav__section-list">
+    <div class="footer__center footer-nav">
+      <div class="footer-nav__section">
+        <h3 class="footer-nav__title footer__title">INFORMATION</h3>
+        <ul class="footer-nav__list footer__list">
           <li><a href="#">New Collection</a></li>
           <li><a href="#">About Store</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -184,9 +185,9 @@
           <li><a href="#">Orders History</a></li>
         </ul>
       </div>
-      <div class="site-nav__section">
-        <h3 class="site-nav__section-title">FOOTER MENU</h3>
-        <ul class="site-nav__section-list">
+      <div class="footer-nav__section">
+        <h3 class="footer-nav__title footer__title">FOOTER MENU</h3>
+        <ul class="footer-nav__list footer__list">
           <li><a href="#">Instagram profile</a></li>
           <li><a href="#">New Collection</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -195,9 +196,9 @@
           <li><a href="#">Purchase Theme</a></li>
         </ul>
       </div>
-      <div class="site-nav__section">
-        <h3 class="site-nav__section-title">USEFUL LINKS</h3>
-        <ul class="site-nav__section-list">
+      <div class="footer-nav__section">
+        <h3 class="footer-nav__title footer__title">USEFUL LINKS</h3>
+        <ul class="footer-nav__list footer__list">
           <li><a href="#">Instagram profile</a></li>
           <li><a href="#">New Collection</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -207,8 +208,8 @@
         </ul>
       </div>
     </div>
-    <div class="column-right">
-      <h3 class="footer-about">ABOUT THE STORE</h3>
+    <div class="footer__right">
+      <h3 class="footer-about footer__title">ABOUT THE STORE</h3>
       <p class="footer-about__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.</p>
       <p class="footer-about__site">www.company.com</p>
       <ul class="footer-about__web">

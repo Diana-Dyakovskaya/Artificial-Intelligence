@@ -104,36 +104,36 @@ h1, h2, h3, h4, h5, h6 {
 /*---------custom-----------*/
 .header {
   background-color: #06101f;
+  padding: 20px 0;
 }
 .header__container {
   display: flex;
   align-items: center;
-  padding: 20px 0;
 }
 .header__logo {
   display: flex;
   align-items: center;
-  .header__logo-text {
+  .header-brand__name {
     display: inline-block;
-    padding-left: 15px;
+    margin-left: 15px;
     color: #3A68B8;
     font-weight: 600;
     font-size: 22px;
     line-height: 30px;
   }
 }
-.header__container nav {
+.header-menu {
  flex: 1 1 auto;
-}
-.header__list {
-  display: flex;
   margin-left: 80px;
+}
+.header-menu__list {
+  display: flex;
   flex-wrap: wrap;
 }
-.header__list-item:not(:last-child) {
-  margin-right: 40px;
+.header-menu__item:not(:first-child) {
+  margin-left: 40px;
 }
-.heared__list-text {
+.header-menu__link {
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-intro {
   background-color: #06101f;
+  border-bottom: 1px solid transparent;
 }
 .home-intro__container {
   display: flex;
@@ -148,7 +149,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 50px;
   padding-bottom: 90px;
   margin: 0 auto;
-
 }
 .home-intro__content {
 max-width: 605px;
@@ -199,18 +199,13 @@ max-width: 605px;
 .home-intro__image {
   margin-left: 115px;
 }
-
-
-.home-logo {
-  background-color: #06101f;
-  padding-bottom: 80px;
-}
-.home-logo__list {
+.home-intro__logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
-.home-logo__item {
+.home-intro__logo {
   margin-bottom: 20px;
 }
 
@@ -222,7 +217,7 @@ max-width: 605px;
   display: flex;
   max-width: 1300px;
   padding-top: 130px;
-  padding-bottom: 170px;
+
   margin: 0 auto;
 }
 .home-learn__content {
@@ -241,12 +236,14 @@ max-width: 605px;
 
 .home_awards {
   background-color: #000311;
+  border-top: 1px solid transparent;
 }
 .home-awards__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   opacity: 0.7;
+  margin-top: 170px;
 }
 .home-awards__item {
   display: flex;
@@ -258,8 +255,8 @@ max-width: 605px;
   max-width: 360px;
   margin-bottom: 20px;
 }
-.home-awards__item:not(:last-child) {
-  margin-right: 20px;
+.home-awards__item:not(:first-child) {
+  margin-left: 20px;
 }
 .home-awards__img {
   flex: 0 1 103px;
@@ -269,13 +266,14 @@ max-width: 605px;
   font-size: 25px;
   line-height: 32px;
   font-weight: 700;
-  margin-bottom: 30px;
+
   margin-top: 30px;
   text-align: center;
   flex: 1 1 auto;
 }
 .home-awards__text {
-   text-align: center;
+  text-align: center;
+  margin-top: 30px;
 }
 .home-awards__plugin {
   display: block;
@@ -329,11 +327,11 @@ max-width: 605px;
   font-size: 14px;
 
 }
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
 }
-.column-left, .column-right {
+.footer__left, .footer__right {
   flex: 0 1 22%;
 }
 .footer-logo {
@@ -348,10 +346,7 @@ max-width: 605px;
   font-weight: 400;
   margin-bottom: 35px;
 }
-[class^="footer-contacts__"] {
 
-  margin-bottom: 20px;
-}
 .footer-contacts__email::before {
   content: '';
   display: inline-block;
@@ -376,28 +371,28 @@ max-width: 605px;
   margin-right: 5px;
   background: url("./img/footer_address.png") 0 0 no-repeat;
 }
-.site-nav {
+.footer-nav {
   display: flex;
   justify-content: space-between;
   flex: 0 1 58%;
   margin-top: 25px;
 }
-.site-nav__section:not(:last-child) {
+.footer-nav__section:not(:last-child) {
   margin-right: 15px;
 }
-.site-nav__section:first-child {
+.footer-nav__section:first-child {
   margin-left: 30px;
 }
-.site-nav__section:last-child {
+.footer-nav__section:last-child {
   margin-right: 30px;
 }
 
-.site-nav__section-title, .footer-about {
+.footer__title {
   margin-bottom: 30px;
   font-size: 16px;
   text-transform: uppercase;
 }
-.site-nav__section-list {
+.footer__list {
   li:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -407,7 +402,7 @@ max-width: 605px;
     color: #FFFFFF;
   }
 }
-.column-right {
+.footer__right {
   margin-top: 25px;
 }
 .footer-about__text {
@@ -422,8 +417,8 @@ max-width: 605px;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.footer-about__web li:not(:last-child) {
-  margin-right: 25px;
+.footer-about__web li:not(:first-child) {
+  margin-left: 25px;
 }
 .footer-about__lang::before {
   content: '';
@@ -431,7 +426,7 @@ max-width: 605px;
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background: url("../img/footer_lang.png") 0 0 no-repeat;
+  background: url("./img/footer_lang.png") 0 0 no-repeat;
 }
 .footer-about__lang {
   display: inline-block;

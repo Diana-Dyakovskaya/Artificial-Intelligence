@@ -108,48 +108,49 @@ h1, h2, h3, h4, h5, h6 {
 /*---------custom-----------*/
 .header {
   background-color: #06101f;
+  padding: 20px 0;
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  padding: 20px 0;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
 }
-.header__logo .header__logo-text {
+.header__logo .header-brand__name {
   display: inline-block;
-  padding-left: 15px;
+  margin-left: 15px;
   color: #3A68B8;
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
 }
 
-.header__container nav {
+.header-menu {
   flex: 1 1 auto;
+  margin-left: 80px;
 }
 
-.header__list {
+.header-menu__list {
   display: flex;
-  margin-left: 80px;
   flex-wrap: wrap;
 }
 
-.header__list-item:not(:last-child) {
-  margin-right: 40px;
+.header-menu__item:not(:first-child) {
+  margin-left: 40px;
 }
 
-.heared__list-text {
+.header-menu__link {
   font-weight: 600;
   color: #FFFFFF;
 }
 
 .home-intro {
   background-color: #06101f;
+  border-bottom: 1px solid transparent;
 }
 
 .home-intro__container {
@@ -219,18 +220,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 115px;
 }
 
-.home-logo {
-  background-color: #06101f;
-  padding-bottom: 80px;
-}
-
-.home-logo__list {
+.home-intro__logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
-.home-logo__item {
+.home-intro__logo {
   margin-bottom: 20px;
 }
 
@@ -242,7 +239,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   max-width: 1300px;
   padding-top: 130px;
-  padding-bottom: 170px;
   margin: 0 auto;
 }
 
@@ -263,6 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home_awards {
   background-color: #000311;
+  border-top: 1px solid transparent;
 }
 
 .home-awards__list {
@@ -270,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: center;
   opacity: 0.7;
+  margin-top: 170px;
 }
 
 .home-awards__item {
@@ -283,8 +281,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-.home-awards__item:not(:last-child) {
-  margin-right: 20px;
+.home-awards__item:not(:first-child) {
+  margin-left: 20px;
 }
 
 .home-awards__img {
@@ -296,7 +294,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
   line-height: 32px;
   font-weight: 700;
-  margin-bottom: 30px;
   margin-top: 30px;
   text-align: center;
   flex: 1 1 auto;
@@ -304,6 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-awards__text {
   text-align: center;
+  margin-top: 30px;
 }
 
 .home-awards__plugin {
@@ -363,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
 }
 
-.column-left, .column-right {
+.footer__left, .footer__right {
   flex: 0 1 22%;
 }
 
@@ -384,10 +382,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.6;
   font-weight: 400;
   margin-bottom: 35px;
-}
-
-[class^=footer-contacts__] {
-  margin-bottom: 20px;
 }
 
 .footer-contacts__email::before {
@@ -417,41 +411,41 @@ h1, h2, h3, h4, h5, h6 {
   background: url("./img/footer_address.png") 0 0 no-repeat;
 }
 
-.site-nav {
+.footer-nav {
   display: flex;
   justify-content: space-between;
   flex: 0 1 58%;
   margin-top: 25px;
 }
 
-.site-nav__section:not(:last-child) {
+.footer-nav__section:not(:last-child) {
   margin-right: 15px;
 }
 
-.site-nav__section:first-child {
+.footer-nav__section:first-child {
   margin-left: 30px;
 }
 
-.site-nav__section:last-child {
+.footer-nav__section:last-child {
   margin-right: 30px;
 }
 
-.site-nav__section-title, .footer-about {
+.footer__title {
   margin-bottom: 30px;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.site-nav__section-list li:not(:last-child) {
+.footer__list li:not(:last-child) {
   margin-bottom: 20px;
 }
-.site-nav__section-list a {
+.footer__list a {
   font-weight: 400;
   opacity: 0.6;
   color: #FFFFFF;
 }
 
-.column-right {
+.footer__right {
   margin-top: 25px;
 }
 
@@ -470,8 +464,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
-.footer-about__web li:not(:last-child) {
-  margin-right: 25px;
+.footer-about__web li:not(:first-child) {
+  margin-left: 25px;
 }
 
 .footer-about__lang::before {
@@ -480,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background: url("../img/footer_lang.png") 0 0 no-repeat;
+  background: url("./img/footer_lang.png") 0 0 no-repeat;
 }
 
 .footer-about__lang {
