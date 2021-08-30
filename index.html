@@ -119,9 +119,7 @@
           industries for previewing layouts and visual mockups.</p>
       </li>
       <li class="home-awards__item">
-        <div class="home-awards__img">
-          <img loading="lazy" src="./img/awards-business.png">
-        </div>
+        <img class="home-awards__img" loading="lazy" src="./img/awards-business.png">
         <h3 class="home-awards__title">Business Prespective Global Agency Awards</h3>
         <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
           industries for previewing layouts and visual mockups.</p>
@@ -149,10 +147,13 @@
     <div class="home-recall__container">
       <div class="home-recall__content">
         <h2 class="home-recall__title title">What our clients say about our awesome solutions</h2>
-        <p class="home-recall-text">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know.</p>
-        <p class="home-recall-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .</p>
-        <p class="home-recall-text">Lorem ipsum is placeholder previewing layouts and visual mockups.</p>
-        <p class="home-recall-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        <p class="home-recall__text">To take a trivial example, which of us ever undertakes laborious physical
+          exercise, except to obtain some advantage from it who do not know.</p>
+        <p class="home-recall__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+          publishing .</p>
+        <p class="home-recall__text">Lorem ipsum is placeholder previewing layouts and visual mockups.</p>
+        <p class="home-recall__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+          publishing industries for previewing layouts and visual mockups.</p>
       </div>
       <div class="home-recall__image">
         <img loading="lazy" src="./img/home-recall.png" alt="Recall">
@@ -162,67 +163,133 @@
 </main>
 <footer class="footer">
   <div class="container footer__container">
-    <div class="footer__left">
-      <img loading="lazy" src="./img/footer_logo.png" alt="logo">
-      <a class="footer-logo" href="#">Artificial Intelligence</a>
-      <p class="footer__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and
-        visual mockups.</p>
-      <ul class="footer-contacts footer__list">
-        <li class="footer-contacts__email">Company@gmail.com.com</li>
-        <li class="footer-contacts__phone">Phone: (064) 332-1233</li>
-        <li class="footer-contacts__address">450 Wall Street, USA, New York</li>
+    <div class="footer__left footer-left">
+      <div class="footer-left__brand footer-brand">
+        <img class="footer-brand__logo" loading="lazy" src="./img/footer_logo.png" alt="logo">
+        <a class="footer-brand__name" href="#">Artificial Intelligence</a>
+        <p class="footer-brand__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and
+          visual mockups.</p>
+      </div>
+      <ul class="footer-left__list footer-list">
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">
+            <i class="footer-list__icon icon icon-email"></i>Company@gmail.com.com
+          </a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">
+            <i class="footer-list__icon icon icon-phone"></i>Phone: (064) 332-1233
+          </a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">
+            <i class="footer-list__icon icon icon-address"></i>450 Wall Street, USA, New York
+          </a>
+        </li>
       </ul>
     </div>
     <div class="footer__center footer-nav">
-      <div class="footer-nav__section">
-        <h3 class="footer-nav__title footer__title">INFORMATION</h3>
-        <ul class="footer-nav__list footer__list">
-          <li><a href="#">New Collection</a></li>
-          <li><a href="#">About Store</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Our Sitemap</a></li>
-          <li><a href="#">Orders History</a></li>
+      <div class="footer-nav__section footer-section">
+        <h2 class="footer-section__title footer-title">INFORMATION</h2>
+        <ul class="footer-section__list footer-list">
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">New Collection</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">About Store</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Contact Us</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Latest News</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Our Sitemap</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Orders History</a>
+          </li>
         </ul>
       </div>
-      <div class="footer-nav__section">
-        <h3 class="footer-nav__title footer__title">FOOTER MENU</h3>
-        <ul class="footer-nav__list footer__list">
-          <li><a href="#">Instagram profile</a></li>
-          <li><a href="#">New Collection</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Purchase Theme</a></li>
+      <div class="footer-nav__section footer-section">
+        <h2 class="footer-section__title footer-title">FOOTER MENU</h2>
+        <ul class="footer-section__list footer-list">
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Instagram profile</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">New Collection</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Contact Us</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Latest News</a>
+          </li>
+          <li class="footer-section__item">
+          <a href="#" class="footer-section__link">Terms & Conditions</a>
+        </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Purchase Theme</a>
+          </li>
         </ul>
       </div>
-      <div class="footer-nav__section">
-        <h3 class="footer-nav__title footer__title">USEFUL LINKS</h3>
-        <ul class="footer-nav__list footer__list">
-          <li><a href="#">Instagram profile</a></li>
-          <li><a href="#">New Collection</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Purchase Theme</a></li>
+      <div class="footer-nav__section footer-section">
+        <h2 class="footer-section__title footer-title">USEFUL LINKS</h2>
+        <ul class="footer-section__list footer-list">
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Instagram profile</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">New Collection</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Contact Us</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Latest News</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Terms & Conditions</a>
+          </li>
+          <li class="footer-section__item">
+            <a href="#" class="footer-section__link">Purchase Theme</a>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="footer__right">
-      <h3 class="footer-about footer__title">ABOUT THE STORE</h3>
-      <p class="footer-about__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.</p>
-      <p class="footer-about__site">www.company.com</p>
-      <ul class="footer-about__web">
-        <li><a href="#"><img loading="lazy" src="./img/footer_facebook.png" alt="Facebook"></a></li>
-        <li><a href="#"><img loading="lazy" src="./img/footer_instagram.png" alt="Instagram"></a></li>
-        <li><a href="#"><img loading="lazy" src="./img/footer_twitter.png" alt="Twitter"></a></li>
-        <li><a href="#"><img loading="lazy" src="./img/footer_linkedin.png" alt="linkedin"></a></li>
-        <li><a href="#"><img loading="lazy" src="./img/footer_youtube.png" alt="Youtube"></a></li>
+    <div class="footer__right footer-right">
+      <div class="footer-right__section footer-section">
+        <h2 class="footer-section__title">ABOUT THE STORE</h2>
+        <p class="footer-section__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.</p>
+        <a href="#" class="footer-section__text-link">www.company.com</a>
+      </div>
+      <ul class="footer-right__social footer-social">
+        <li class="footer-social__item">
+          <a href="#"><img loading="lazy" src="./img/footer_facebook.png" alt="Facebook"></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><img loading="lazy" src="./img/footer_instagram.png" alt="Instagram"></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><img loading="lazy" src="./img/footer_twitter.png" alt="Twitter"></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><img loading="lazy" src="./img/footer_linkedin.png" alt="linkedin"></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><img loading="lazy" src="./img/footer_youtube.png" alt="Youtube"></a>
+        </li>
       </ul>
-      <p class="footer-about__lang">English</p>
-      <button type="button" class="footer-lang__button"><span class="button-icon"></span></button>
+      <div class="footer-right__lang">
+        <select name="lang" class="footer-lang">
+          <option value="english" selected>English</option>
+        </select>
+      </div>
     </div>
   </div>
 </footer>
 </body>
 </html>
+
