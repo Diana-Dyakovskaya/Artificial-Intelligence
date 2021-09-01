@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <title>Artificial intelligence</title>
 </head>
 <body>
@@ -43,7 +44,6 @@
           </div>
         </div>
       </nav>
-
     </div>
   </div>
 </header>
@@ -57,7 +57,7 @@
         <p class="home-intro__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
           publishing industries for previewing layouts and visual mockups.</p>
         <div class="home-intro__btns">
-          <a class="button home-intro__button" href="#"">Get Started</a>
+          <a class="button home-intro__button" href="#">Get Started</a>
           <a class="home-intro__video button" href="#"><span class="home-intro__video-button">Watch
             Video</span></a>
         </div>
@@ -107,43 +107,72 @@
   </section>
   <section class="home_awards">
     <h2 class="visually-hidden">Global Agency Awards</h2>
-    <ul class="home-awards__list">
-      <li class="home-awards__item">
-        <img class="home-awards__img" loading="lazy" src="./img/awards-naxly.png">
-        <h3 class="home-awards__title">Naxly as the Winners in Global Agency Awards</h3>
-        <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </li>
-      <li class="home-awards__item">
-        <img class="home-awards__img" loading="lazy" src="./img/awards-expert.png">
-        <h3 class="home-awards__title">Expert Prespective Agency Awards</h3>
-        <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </li>
-      <li class="home-awards__item">
-        <img class="home-awards__img" loading="lazy" src="./img/awards-business.png">
-        <h3 class="home-awards__title">Business Prespective Global Agency Awards</h3>
-        <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </li>
-      <li class="home-awards__item">
-        <img class="home-awards__img" loading="lazy" src="./img/awards-results.png">
-        <h3 class="home-awards__title">Value for Results in Global Agency Awards</h3>
-        <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </li>
-      <li class="home-awards__item">
-        <img class="home-awards__img" loading="lazy" src="./img/awards-experience.png">
-        <h3 class="home-awards__title">Global Experience in Agency Awards</h3>
-        <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </li>
-    </ul>
-    <p class="home-awards__plugin">
-      <span class="button-1"></span>
-      <span class="button-2 active-button"></span>
-      <span class="button-3"></span>
-    </p>
+    <div class="swiper">
+      <ul class="home-awards__list swiper-wrapper">
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-naxly.png">
+          <h3 class="home-awards__title">Naxly as the Winners in Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-expert.png">
+          <h3 class="home-awards__title">Expert Prespective Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-business.png">
+          <h3 class="home-awards__title">Business Prespective Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-results.png">
+          <h3 class="home-awards__title">Value for Results in Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-experience.png">
+          <h3 class="home-awards__title">Global Experience in Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-naxly.png">
+          <h3 class="home-awards__title">Naxly as the Winners in Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-expert.png">
+          <h3 class="home-awards__title">Expert Prespective Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-business.png">
+          <h3 class="home-awards__title">Business Prespective Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-results.png">
+          <h3 class="home-awards__title">Value for Results in Global Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+        <li class="home-awards__item swiper-slide">
+          <img class="home-awards__img" loading="lazy" src="./img/awards-experience.png">
+          <h3 class="home-awards__title">Global Experience in Agency Awards</h3>
+          <p class="home-awards__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+            industries for previewing layouts and visual mockups.</p>
+        </li>
+      </ul>
+      <div class="swiper-pagination home-awards__plugin"></div>
+    </div>
   </section>
   <section class="home-recall">
     <div class="home-recall__container">
@@ -292,6 +321,8 @@
     </div>
   </div>
 </footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
